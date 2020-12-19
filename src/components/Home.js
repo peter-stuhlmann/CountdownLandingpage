@@ -1,5 +1,7 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import moment from 'moment';
+
+import StyledCountdown from './StyledCountdown';
 
 export default function Home() {
   const [days, setDays] = useState('00');
@@ -52,8 +54,143 @@ export default function Home() {
   }, [duration]);
 
   return (
-    <Fragment>
-      {days}:{hours}:{minutes}:{seconds}
-    </Fragment>
+    <StyledCountdown>
+      <div className="pair">
+        <div className="num-wrap">
+          <div className="num">
+            <div className="num-inner">
+              <div className="up">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{days.charAt(0)}</div>
+              </div>
+              <div className="down">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{days.charAt(0)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="num-wrap">
+          <div className="num">
+            <div className="num-inner">
+              <div className="up">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{days.charAt(days.length - 1)}</div>
+              </div>
+              <div className="down">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{days.charAt(days.length - 1)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="pair">
+        <div className="num-wrap">
+          <div className="num">
+            <div className="num-inner">
+              <div className="up">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{hours.charAt(0)}</div>
+              </div>
+              <div className="down">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{hours.charAt(0)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="num-wrap">
+          <div className="num">
+            <div className="num-inner">
+              <div className="up">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{hours.charAt(hours.length - 1)}</div>
+              </div>
+              <div className="down">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{hours.charAt(hours.length - 1)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="pair">
+        <div className="num-wrap">
+          <div className="num">
+            <div className="num-inner">
+              <div className="up">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{minutes.charAt(0)}</div>
+              </div>
+              <div className="down">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{minutes.charAt(0)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="num-wrap">
+          <div className="num">
+            <div className="num-inner">
+              <div className="up">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{minutes.charAt(minutes.length - 1)}</div>
+              </div>
+              <div className="down">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{minutes.charAt(minutes.length - 1)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="pair">
+        <div className="num-wrap">
+          <div className="num">
+            <div className="num-inner">
+              <div className="up">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{seconds.charAt(0)}</div>
+              </div>
+              <div className="down">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{seconds.charAt(0)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="num-wrap">
+          <div className="num">
+            <div className="num-inner">
+              <div className="up">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{seconds.charAt(seconds.length - 1)}</div>
+              </div>
+              <div className="down">
+                <div className="divi"></div>
+                <div className="shadow"></div>
+                <div className="inn">{seconds.charAt(seconds.length - 1)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </StyledCountdown>
   );
 }
