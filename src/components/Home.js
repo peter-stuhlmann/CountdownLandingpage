@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 
 import StyledCountdown from './StyledCountdown';
+import StyledUnit from './StyledUnit';
 
 export default function Home() {
   const [days, setDays] = useState('00');
@@ -88,6 +89,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <StyledUnit>Days</StyledUnit>
       </div>
       <div className="pair">
         <div className="num-wrap">
@@ -122,6 +124,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <StyledUnit>Hours</StyledUnit>
       </div>
       <div className="pair">
         <div className="num-wrap">
@@ -156,6 +159,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <StyledUnit>Minutes</StyledUnit>
       </div>
       <div className="pair">
         <div className="num-wrap">
@@ -190,6 +194,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <StyledUnit>Seconds</StyledUnit>
       </div>
     </StyledCountdown>
   );
