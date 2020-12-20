@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import Hr from '../assets/hr.png';
-import Colon from '../assets/colon.png';
+import Divider from '../assets/img/divider.png';
+import Colon from '../assets/img/colon.svg';
 
 const StyledCountdown = styled.section`
   text-align: center;
@@ -33,6 +33,7 @@ const StyledCountdown = styled.section`
       background-image: url(${Colon});
       background-position: 18px 27px;
       background-repeat: no-repeat;
+      background-size: 8px 32px;
       position: absolute;
       z-index: 20;
       top: 0;
@@ -134,7 +135,7 @@ const StyledCountdown = styled.section`
             box-sizing: border-box;
 
             .divi {
-              background-image: url(${Hr});
+              background-image: url(${Divider});
               background-repeat: no-repeat;
               background-size: 64px 18px;
               position: absolute;
@@ -145,14 +146,14 @@ const StyledCountdown = styled.section`
               opacity: 0.8;
 
               @media (max-width: 768px) {
-                background-image: url(${Hr});
+                background-image: url(${Divider});
                 background-size: 42px 9px;
                 width: 48px;
                 height: 4.5px;
               }
 
               @media (max-width: 600px) {
-                background-image: url(${Hr});
+                background-image: url(${Divider});
                 background-size: 32px 9px;
                 width: 32px;
                 height: 4.5px;
