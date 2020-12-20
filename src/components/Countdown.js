@@ -4,7 +4,7 @@ import moment from 'moment';
 import StyledCountdown from './StyledCountdown';
 import StyledUnit from './StyledUnit';
 
-export default function Home() {
+export default function Countdown() {
   const [days, setDays] = useState('00');
   const [hours, setHours] = useState('00');
   const [minutes, setMinutes] = useState('00');
