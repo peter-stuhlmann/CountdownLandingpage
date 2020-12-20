@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import Footer from './components/Footer';
 import { GlobalStyles } from './components/GlobalStyles';
 
 import Router from './components/Router';
@@ -11,6 +12,7 @@ export default function App() {
       <Suspense fallback={'Loading...'}>
         <Router />
       </Suspense>
+      <Footer />
     </BrowserRouter>
   );
 }
