@@ -63,12 +63,12 @@ export default function Countdown() {
               <div className="up">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{days.charAt(0)}</div>
+                <div className="inn">{duration > 0 ? days.charAt(0) : '0'}</div>
               </div>
               <div className="down">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{days.charAt(0)}</div>
+                <div className="inn">{duration > 0 ? days.charAt(0) : '0'}</div>
               </div>
             </div>
           </div>
@@ -79,12 +79,16 @@ export default function Countdown() {
               <div className="up">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{days.charAt(days.length - 1)}</div>
+                <div className="inn">
+                  {duration > 0 ? days.charAt(days.length - 1) : '0'}
+                </div>
               </div>
               <div className="down">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{days.charAt(days.length - 1)}</div>
+                <div className="inn">
+                  {duration > 0 ? days.charAt(days.length - 1) : '0'}
+                </div>
               </div>
             </div>
           </div>
@@ -98,12 +102,16 @@ export default function Countdown() {
               <div className="up">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{hours.charAt(0)}</div>
+                <div className="inn">
+                  {duration > 0 ? hours.charAt(0) : '0'}
+                </div>
               </div>
               <div className="down">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{hours.charAt(0)}</div>
+                <div className="inn">
+                  {duration > 0 ? hours.charAt(0) : '0'}
+                </div>
               </div>
             </div>
           </div>
@@ -114,12 +122,16 @@ export default function Countdown() {
               <div className="up">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{hours.charAt(hours.length - 1)}</div>
+                <div className="inn">
+                  {duration > 0 ? hours.charAt(hours.length - 1) : '0'}
+                </div>
               </div>
               <div className="down">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{hours.charAt(hours.length - 1)}</div>
+                <div className="inn">
+                  {duration > 0 ? hours.charAt(hours.length - 1) : '0'}
+                </div>
               </div>
             </div>
           </div>
@@ -133,12 +145,16 @@ export default function Countdown() {
               <div className="up">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{minutes.charAt(0)}</div>
+                <div className="inn">
+                  {duration > 0 ? minutes.charAt(0) : '0'}
+                </div>
               </div>
               <div className="down">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{minutes.charAt(0)}</div>
+                <div className="inn">
+                  {duration > 0 ? minutes.charAt(0) : '0'}
+                </div>
               </div>
             </div>
           </div>
@@ -149,12 +165,16 @@ export default function Countdown() {
               <div className="up">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{minutes.charAt(minutes.length - 1)}</div>
+                <div className="inn">
+                  {duration > 0 ? minutes.charAt(minutes.length - 1) : '0'}
+                </div>
               </div>
               <div className="down">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{minutes.charAt(minutes.length - 1)}</div>
+                <div className="inn">
+                  {duration > 0 ? minutes.charAt(minutes.length - 1) : '0'}
+                </div>
               </div>
             </div>
           </div>
@@ -168,12 +188,16 @@ export default function Countdown() {
               <div className="up">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{seconds.charAt(0)}</div>
+                <div className="inn">
+                  {duration > 0 ? seconds.charAt(0) : '0'}
+                </div>
               </div>
               <div className="down">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{seconds.charAt(0)}</div>
+                <div className="inn">
+                  {duration > 0 ? seconds.charAt(0) : '0'}
+                </div>
               </div>
             </div>
           </div>
@@ -184,12 +208,16 @@ export default function Countdown() {
               <div className="up">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{seconds.charAt(seconds.length - 1)}</div>
+                <div className="inn">
+                  {duration > 0 ? seconds.charAt(seconds.length - 1) : '0'}
+                </div>
               </div>
               <div className="down">
                 <div className="divi"></div>
                 <div className="shadow"></div>
-                <div className="inn">{seconds.charAt(seconds.length - 1)}</div>
+                <div className="inn">
+                  {duration > 0 ? seconds.charAt(seconds.length - 1) : '0'}
+                </div>
               </div>
             </div>
           </div>
