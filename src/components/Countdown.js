@@ -54,6 +54,9 @@ export default function Countdown() {
     );
   }, [duration]);
 
+  document.title =
+    duration > 0 ? `${days}:${hours}:${minutes}:${seconds}` : '00:00:00:00';
+
   return (
     <StyledCountdown>
       <div className="pair">
